@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 12%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background: #FFF;
+  z-index: 1000;
+}
+
+header.navbar-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 25px;
+  color: #000;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right i {
+  font-size: 20px;
+  color: #000;
+  margin: 0 10px;
+}
+
+section {
+  padding: 80px 12%;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin: 18px 0;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.home-text h1 img {
+  transform: rotate(10deg);
+}
+
+.home-text h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home-text p {
+  margin-bottom: 20px;
+}
+
+.home-text .cta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-text .cta .adopt {
+  background-color: #4a628a;
+  color: #fff;
+  padding: 10px 6%;
+  border-radius: 5px;
+}
+
+.home-text .cta .food {
+  color: #000;
+}
+
+.home-img img {
+  max-width: 400px;
+  height: auto;
+}
+
+.our-mission {
+  display: flex;
+  align-items: center;
+}
+
+.our-mission .text-1 {
+  margin-right: 100px;
+  width: 200%;
+}
+
+.our-mission .text-1 h5 {
+  font-size: 1rem;
+  color: #4a628a;
+}
+
+.our-mission .text-1 h1 {
+  font-size: 2rem;
+}
+
+.our-mission .text-2 p {
+  font-size: 1rem;
+}
+
+.adoption {
+  padding: 60px 12%;
+  background-color: #fff;
+}
+
+.cta-adopt {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.cta-adopt button {
+  border: none;
+  outline: none;
+  background-color: #4a628a;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  background-color: #fff;
+  overflow: hidden;
+  width: 23%;
+}
+
+.card-container .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.card .details {
+  text-align: center;
+  padding: 10px;
+}
+
+.stories {
+  padding: 60px 12%;
+  margin-bottom: 100px;
+}
+
+.content-stories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-stories .image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content-stories .text-stories h5 {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 400;
+}
+
+.content-stories .text-stories h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.content-stories .text-stories p {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.content-stories .text-stories .btn-cta {
+  background: #4a628a;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.acordion-container {
+  padding: 60px 12%;
+  margin-bottom: 200px;
+  background-color: #e5eeff;
+}
+
+#accordion {
+  margin: 100px auto;
+  width: 600px;
+}
+
+#accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#accordion li label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #4a628a;
+}
+
+#accordion li label span {
+  font-size: 22px;
+  color: #333;
+}
+
+#accordion label + input[type="radio"] {
+  display: none;
+}
+
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
+
+footer {
+  padding: 3rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a628a;
+  color: #fff;
+  width: 100%;
+}
+
+.copyright {
+  font-weight: 500;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-media p i {
+  margin-right: 10px;
+}
+
+/* problem solve */
+
+.stories,
+.adoption {
+  scroll-margin-top: 100px;
+}
